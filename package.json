@@ -11,7 +11,8 @@
     "client": "cd client && npm start"
   },
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "webpack": "^5.85.1"
   },
   "devDependencies": {
     "concurrently": "^5.2.0",
