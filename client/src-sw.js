@@ -6,7 +6,7 @@ const { ExpirationPlugin } = require('workbox-expiration');
 const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
 
 precacheAndRoute(self.__WB_MANIFEST);
-
+self.__WB_MANIFEST;
 // Set up page cache
 const pageCache = new CacheFirst({
   cacheName: 'page-cache',
