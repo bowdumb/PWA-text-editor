@@ -2,7 +2,6 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackPwaManifest = require('webpack-pwa-manifest');
 const path = require('path');
 const { InjectManifest } = require('workbox-webpack-plugin');
-// importScripts('workbox-v8.2.0/workbox-sw.js');
 
 module.exports = () => {
   return {
@@ -23,6 +22,17 @@ module.exports = () => {
       new InjectManifest({
         swSrc: './src-sw.js',
         swDest: 'sw.js', // Update the destination file name
+      }),
+      new WorkboxPlugin.InjectManifest({
+        swSrc: path.join(process.cwd(), '/app/resources/service-worker.js'),
+        swDest: 'sw.js',
+        exclude: [
+          /\.map$/,
+          /manifest$/,
+          /\.htaccess$/,
+          /service-worker\.js$/,
+          /sw\.js$/,
+        ],
       }),
       new WebpackPwaManifest({
         fingerprints: false,
