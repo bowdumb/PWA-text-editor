@@ -30,6 +30,10 @@ Some of the features included within this application include:
 ### Example of JATE running after installation
 ![Example of JATE running after installation](./client/dist/assets/Screenshot%202023-06-07%20at%205.06.56%20PM.png)
 
+## Credits
+
+The source code for this project was provided by the Georgia Tech Full-Stack Web Development Bootcamp.
+
 ## Contact
 
 For questions regarding this application please feel free to reach out to the author via <a href="https://www.linkedin.com/in/joshua-claxton-916a2a272/">LinkedIn</a>
