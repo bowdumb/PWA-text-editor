@@ -11,6 +11,7 @@
     "client": "cd client && npm start"
   },
   "dependencies": {
+    "css-loader": "^6.8.1",
     "express": "^4.17.1",
     "html-webpack-plugin": "^5.5.1",
     "webpack": "^5.85.1",
