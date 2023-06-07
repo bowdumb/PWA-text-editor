@@ -21,19 +21,8 @@ module.exports = () => {
       }),
       new InjectManifest({
         swSrc: './src-sw.js',
-        swDest: 'sw.js', // Update the destination file name
+        swDest: 'sw.js',
       }),
-      // new WorkboxPlugin.InjectManifest({
-      //   swSrc: path.join(process.cwd(), '/src-sw.js'),
-      //   swDest: 'sw.js',
-      //   exclude: [
-      //     /\.map$/,
-      //     /manifest$/,
-      //     /\.htaccess$/,
-      //     /service-worker\.js$/,
-      //     /sw\.js$/,
-      //   ],
-      // }),
       new WebpackPwaManifest({
         fingerprints: false,
         inject: true,
