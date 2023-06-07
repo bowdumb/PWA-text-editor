@@ -3,7 +3,9 @@ const { CacheFirst, StaleWhileRevalidate } = require('workbox-strategies');
 const { registerRoute } = require('workbox-routing');
 const { CacheableResponsePlugin } = require('workbox-cacheable-response');
 const { ExpirationPlugin } = require('workbox-expiration');
+import { precacheAndRoute } from 'workbox-precaching';
 const { precacheAndRoute } = require('workbox-precaching/precacheAndRoute');
+
 
 precacheAndRoute(self.__WB_MANIFEST);
 
