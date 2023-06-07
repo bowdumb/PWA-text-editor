@@ -24,7 +24,7 @@ module.exports = () => {
         swDest: 'sw.js', // Update the destination file name
       }),
       new WorkboxPlugin.InjectManifest({
-        swSrc: path.join(process.cwd(), '/app/resources/service-worker.js'),
+        swSrc: path.join(process.cwd(), '/src-sw.js'),
         swDest: 'sw.js',
         exclude: [
           /\.map$/,
